@@ -4,8 +4,10 @@
 		<ItemsToCopy Include="$(FilesToCopy)" />
     </ItemGroup>  
   
-    <Target Name="CopyFiles">  
+    <Target Name="CopyFiles"> 
+		<Message Text="START FILES COPYING"/>
         <Copy SourceFiles="@(ItemsToCopy)" DestinationFolder="$(DestinationFolder)"/>
+		<Message Text="FINISH  FILES COPYING"/>
     </Target>  
   
 </Project> 

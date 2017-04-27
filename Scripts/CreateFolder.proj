@@ -4,8 +4,10 @@
 		<Directory>Output</Directory>
     </PropertyGroup>  
   
-    <Target Name="CreateDirectories">  
+    <Target Name="CreateDirectories">
+		<Message Text="START FOLDER CREATION"/>
         <MakeDir Directories="$(Directory)"/>
+		<Message Text="FINISH FOLDER CREATION"/>
     </Target>  
   
 </Project>  
