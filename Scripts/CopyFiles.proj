@@ -1,11 +1,11 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   
-    <PropertyGroup>  
-		
-    </PropertyGroup>  
+    <ItemGroup>  
+		<ItemsToCopy Include="$(FilesToCopy)" />
+    </ItemGroup>  
   
     <Target Name="CopyFiles">  
-        <Copy SourceFiles="$(FileToCopy)" DestinationFolder="$(DestinationFolder)"/>
+        <Copy SourceFiles="@(ItemsToCopy)" DestinationFolder="$(DestinationFolder)"/>
     </Target>  
   
 </Project> 
