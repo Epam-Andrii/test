@@ -1,12 +1,11 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   
     <PropertyGroup>  
-        <OutputDirectory>Output</OutputDirectory>  
+		<Directory>Output</Directory>
     </PropertyGroup>  
   
     <Target Name="CreateDirectories">  
-        <MakeDir  
-            Directories="$(OutputDirectory)"/>  
+        <MakeDir Directories="$(Directory)"/>
     </Target>  
   
 </Project>  
