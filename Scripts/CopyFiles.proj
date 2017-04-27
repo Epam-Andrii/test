@@ -5,7 +5,7 @@
     </PropertyGroup>  
   
     <Target Name="CopyFiles">  
-        <Copy SourceFiles="$(FileToCopy)" DestinationDirectory="$(DestinationFolder)"/>
+        <Copy SourceFiles="$(FileToCopy)" DestinationFolder="$(DestinationFolder)"/>
     </Target>  
   
 </Project> 
