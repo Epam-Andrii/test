@@ -1,12 +1,12 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ConsoleApplication.Services;
+﻿using ConsoleApplication.Services;
+using NUnit.Framework;
 
 namespace ConsoleApplication.UnitTests
 {
-    [TestClass]
+    [TestFixture]
     public class FormaterTests
     {
-        [TestMethod]
+        [Test]
         public void TestMethod1()
         {
             var formater = new Formater();
