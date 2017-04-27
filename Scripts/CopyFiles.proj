@@ -5,9 +5,9 @@
     </ItemGroup>  
   
     <Target Name="CopyFiles"> 
-		<Message Text="START FILES COPYING"/>
+		<Message Text="------------------------------------START FILES COPYING------------------------------------"/>
         <Copy SourceFiles="@(ItemsToCopy)" DestinationFolder="$(DestinationFolder)"/>
-		<Message Text="FINISH  FILES COPYING"/>
+		<Message Text="------------------------------------FINISH  FILES COPYING------------------------------------"/>
     </Target>  
   
 </Project> 

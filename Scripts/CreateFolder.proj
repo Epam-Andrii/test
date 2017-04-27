@@ -5,9 +5,9 @@
     </PropertyGroup>  
   
     <Target Name="CreateDirectories">
-		<Message Text="START FOLDER CREATION"/>
+		<Message Text="------------------------------------START FOLDER CREATION------------------------------------"/>
         <MakeDir Directories="$(Directory)"/>
-		<Message Text="FINISH FOLDER CREATION"/>
+		<Message Text="------------------------------------FINISH FOLDER CREATION------------------------------------"/>
     </Target>  
   
 </Project>  
